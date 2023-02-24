@@ -5,9 +5,138 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  color: #293264;
+  padding: 50px 100px;
+  background: #F5F7FB;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.start-container{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.start-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-title{
+  font-family: "karla";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.start-btn{
+  background: #4D5B9E;
+  width: 200px;
+  height: 60px;
+  border: none;
+  border-radius: 20px;
+  color: #F5F7FB;
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.question{
+  text-align: center;
+}
+
+.answer-btn-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.answer-btn{
+  padding: 10px;
+  margin: 8px;
+  background: none;
+  border-radius: 15px;
+  border: 1px solid #4D5B9E;
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: #293264;
+}
+
+.answer-btn.selected{
+  background: #D6DBF5;
+  border: none;
+}
+
+.answer-btn.correct{
+  background: #94D7A2;
+  border: #94D7A2;
+}
+
+.answer-btn.incorrect{
+  background: #F8BCBC;
+  border: #F8BCBC;
+}
+
+.answer-btn.dimmed{
+  opacity: 0.5;
+}
+
+.warning-text{
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  color: #ff4848;
+}
+
+.check-btn{
+  background: #4D5B9E;
+  color: #F5F7FB;
+  width: 200px;
+  height: 60px;
+  border: none;
+  border-radius: 20px;
+  font-family: "inter";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 15px;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.result-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.result-text{
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+}
+
+.play-btn{
+  width: 150px;
+  height: 45px;
+  background: #4D5B9E;
+  border: none;
+  border-radius: 15px;
+  color: #F5F7FB;
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
 }
